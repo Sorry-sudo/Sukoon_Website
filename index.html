@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sukoon Resorts Skardu | Luxury Amidst the Peaks</title>
+  <meta name="description" content="Experience luxury amidst the peaks of Skardu at Sukoon Resorts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="bg-gradient"></div>
+  <div class="floating-shape floating-shape--1"></div>
+  <div class="floating-shape floating-shape--2"></div>
+  <div class="floating-shape floating-shape--3"></div>
+  <div class="starfield" id="starfield"></div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="scroll-progress"><div class="scroll-progress__bar" id="progressBar"></div></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <span class="header__logo-icon">&#9670;</span>
+        <span class="header__logo-text">Sukoon Resorts</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#hero" class="header__nav-link">Home</a></li>
+          <li><a href="#rooms" class="header__nav-link">Rooms</a></li>
+          <li><a href="#amenities" class="header__nav-link">Amenities</a></li>
+          <li><a href="#reviews" class="header__nav-link">Reviews</a></li>
+          <li><a href="#location" class="header__nav-link">Location</a></li>
+          <li><a href="#contact" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/923322785666" class="btn btn--rose header__cta">Book Now</a>
+      <button class="header__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__bg"></div>
+    <div class="hero__glow"></div>
+    <div class="hero__particles" id="heroParticles"></div>
+    <div class="container hero__content">
+      <span class="hero__badge">4.5 Rating | 160+ Reviews</span>
+      <h1 class="hero__title">Experience Luxury<br/><span class="gradient-text">Amidst the Peaks</span><br/>of Skardu</h1>
+      <p class="hero__subtitle">Nestled in Gayool, Sukoon Resorts Skardu offers comfortable accommodations, breathtaking views, and warm northern hospitality.</p>
+      <div class="hero__actions">
+        <a href="#rooms" class="btn btn--rose">Explore Rooms</a>
+        <a href="tel:03322785666" class="btn btn--outline">Call Us</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats" id="reviews">
+    <div class="container stats__grid">
+      <div class="stats__item">
+        <div class="stats__stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span></div>
+        <div class="stats__rating" id="ratingCounter">4.5 Stars</div>
+        <p class="stats__label">160+ Verified Google Reviews</p>
+      </div>
+      <div class="stats__item">
+        <span class="stats__icon">🏔️</span>
+        <p class="stats__label">Prime Mountain Location</p>
+      </div>
+      <div class="stats__item">
+        <span class="stats__icon">🛎️</span>
+        <p class="stats__label">24/7 Room Service</p>
+      </div>
+      <div class="stats__item">
+        <span class="stats__icon">🌄</span>
+        <p class="stats__label">Scenic Views</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROOMS ===== -->
+  <section class="rooms section" id="rooms">
+    <div class="container">
+      <div class="section__header reveal from-bottom">
+        <span class="section__tag">Accommodations</span>
+        <div class="gold-divider"><span class="gold-divider__line"></span><span class="gold-divider__diamond"></span><span class="gold-divider__line"></span></div>
+        <h2 class="section__title">Rooms & Suites</h2>
+        <p class="section__desc">Luxurious rooms designed for the perfect mountain retreat.</p>
+      </div>
+      <div class="rooms__grid reveal-stagger">
+        <div class="room-card">
+          <div class="room-card__image">
+            <div class="room-card__image-inner" style="background-image: url('images/room-deluxe.jpg'), linear-gradient(135deg, #3A2518, #261A12);"></div>
+            <div class="room-card__image-shimmer"></div>
+            <div class="room-card__badge">Popular</div>
+          </div>
+          <div class="room-card__body">
+            <h3 class="room-card__title">Deluxe Mountain View</h3>
+            <p class="room-card__desc">Panoramic mountain views with king-sized bed and premium furnishings.</p>
+            <div class="room-card__tags">
+              <span class="room-card__tag">Wi-Fi</span>
+              <span class="room-card__tag">King Bed</span>
+              <span class="room-card__tag">Balcony</span>
+            </div>
+            <div class="room-card__footer">
+              <span class="room-card__price">PKR 8,500<span class="room-card__price-note">/night</span></span>
+              <a href="#" class="btn btn--rose">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-card__image">
+            <div class="room-card__image-inner" style="background-image: url('images/room-executive.jpg'), linear-gradient(135deg, #261A12, #3A2518);"></div>
+            <div class="room-card__image-shimmer"></div>
+            <div class="room-card__badge room-card__badge--champagne">Best Value</div>
+          </div>
+          <div class="room-card__body">
+            <h3 class="room-card__title">Executive Suite</h3>
+            <p class="room-card__desc">Elegant suite with living area and stunning peak views.</p>
+            <div class="room-card__tags">
+              <span class="room-card__tag">Wi-Fi</span>
+              <span class="room-card__tag">Living Area</span>
+              <span class="room-card__tag">Mini Bar</span>
+            </div>
+            <div class="room-card__footer">
+              <span class="room-card__price">PKR 12,000<span class="room-card__price-note">/night</span></span>
+              <a href="#" class="btn btn--rose">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-card__image">
+            <div class="room-card__image-inner" style="background-image: url('images/room-family.jpg'), linear-gradient(135deg, #1A0F0A, #261A12);"></div>
+            <div class="room-card__image-shimmer"></div>
+          </div>
+          <div class="room-card__body">
+            <h3 class="room-card__title">Family Room</h3>
+            <p class="room-card__desc">Spacious family accommodation with all modern comforts.</p>
+            <div class="room-card__tags">
+              <span class="room-card__tag">Wi-Fi</span>
+              <span class="room-card__tag">Multiple Beds</span>
+              <span class="room-card__tag">Heating</span>
+            </div>
+            <div class="room-card__footer">
+              <span class="room-card__price">PKR 15,000<span class="room-card__price-note">/night</span></span>
+              <a href="#" class="btn btn--rose">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AMENITIES ===== -->
+  <section class="amenities section section--dark" id="amenities">
+    <div class="container">
+      <div class="section__header reveal from-bottom">
+        <span class="section__tag section__tag--light">Amenities</span>
+        <div class="gold-divider"><span class="gold-divider__line"></span><span class="gold-divider__diamond"></span><span class="gold-divider__line"></span></div>
+        <h2 class="section__title section__title--light">Premium Services</h2>
+        <p class="section__desc section__desc--light">Every detail curated for an extraordinary stay.</p>
+      </div>
+      <div class="amenities__grid reveal-stagger">
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M8 40h48v16H8zM16 40V24a16 16 0 0132 0v16" stroke="#D4AF37" stroke-width="2.5" fill="none"/><circle cx="32" cy="24" r="6" stroke="#D4AF37" stroke-width="2"/><path d="M28 24l3 3 5-5" stroke="#D4AF37" stroke-width="2"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Mountain View Balconies</h3>
+          <p class="amenity-card__desc">Wake up to panoramic Skardu valley views.</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M16 20h32l4 12H12l4-12z" stroke="#D4AF37" stroke-width="2"/><path d="M8 44h48v4H8z" fill="#D4AF37"/><circle cx="20" cy="44" r="4" stroke="#D4AF37" stroke-width="2"/><circle cx="44" cy="44" r="4" stroke="#D4AF37" stroke-width="2"/></svg>
+          </div>
+          <h3 class="amenity-card__title">In-House Dining</h3>
+          <p class="amenity-card__desc">Authentic local and international cuisine.</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg viewBox="0 0 64 64" fill="none"><rect x="12" y="20" width="40" height="28" rx="4" stroke="#D4AF37" stroke-width="2"/><path d="M24 28v12M40 28v12" stroke="#D4AF37" stroke-width="2"/><path d="M28 12l4-4 4 4" stroke="#D4AF37" stroke-width="2"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Free Parking &amp; Transport</h3>
+          <p class="amenity-card__desc">Complimentary parking and transport services.</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg viewBox="0 0 64 64" fill="none"><rect x="8" y="16" width="48" height="28" rx="4" stroke="#D4AF37" stroke-width="2"/><path d="M24 44v4M40 44v4" stroke="#D4AF37" stroke-width="2"/><path d="M32 16V8" stroke="#D4AF37" stroke-width="2"/><circle cx="22" cy="30" r="3" fill="#D4AF37"/><circle cx="42" cy="30" r="3" fill="#D4AF37"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Heated Rooms &amp; Wi-Fi</h3>
+          <p class="amenity-card__desc">Stay warm and connected throughout your stay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOCATION ===== -->
+  <section class="location section" id="location">
+    <div class="container">
+      <div class="section__header reveal from-bottom">
+        <span class="section__tag">Find Us</span>
+        <div class="gold-divider"><span class="gold-divider__line"></span><span class="gold-divider__diamond"></span><span class="gold-divider__line"></span></div>
+        <h2 class="section__title">Location &amp; Contact</h2>
+        <p class="section__desc">Minutes from Skardu's main attractions.</p>
+      </div>
+      <div class="location__grid">
+        <div class="location__map reveal from-left">
+          <div class="location__map-placeholder">
+            <div class="location__map-bg">
+              <div class="location__map-line"></div>
+              <div class="location__map-line"></div>
+              <div class="location__map-line"></div>
+            </div>
+            <div class="location__map-pin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5" fill="#D4AF37"/></svg>
+              <div class="location__map-pin-ring"></div>
+            </div>
+            <p><strong>Sukoon Road, Gayool, Skardu</strong><br/>Gilgit-Baltistan, Pakistan</p>
+            <a href="#" class="btn btn--rose btn--sm">Open Maps</a>
+          </div>
+        </div>
+        <div class="location__card reveal from-right" id="contact">
+          <h3 class="location__heading">Get in Touch</h3>
+          <p class="location__text">Reach out for reservations or inquiries.</p>
+          <div class="location__details">
+            <div class="location__detail">
+              <span class="location__detail-icon">📞</span>
+              <div><strong>Phone</strong><a href="tel:03322785666">0332-2785666</a></div>
+            </div>
+            <div class="location__detail">
+              <span class="location__detail-icon">💬</span>
+              <div><strong>WhatsApp</strong><a href="https://wa.me/923322785666">+92 332 2785666</a></div>
+            </div>
+            <div class="location__detail">
+              <span class="location__detail-icon">📷</span>
+              <div><strong>Instagram</strong><a href="https://instagram.com/sukoon.resorts/">@sukoon.resorts</a></div>
+            </div>
+            <div class="location__detail">
+              <span class="location__detail-icon">📍</span>
+              <div><strong>Address</strong><span>Sukoon Road, Gayool, Skardu</span></div>
+            </div>
+          </div>
+          <a href="https://wa.me/923322785666" class="btn btn--rose btn--lg" style="width:100%;justify-content:center;">Message Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="footer__logo">Sukoon Resorts Skardu</span>
+        <p class="footer__desc">Experience luxury amidst the peaks of Skardu with warm northern hospitality.</p>
+        <div class="footer__social">
+          <a href="https://instagram.com/sukoon.resorts/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>Instagram</a>
+          <a href="https://facebook.com/sukoonresortsskardu/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul>
+          <li><a href="#hero"><span></span>Home</a></li>
+          <li><a href="#rooms"><span></span>Rooms</a></li>
+          <li><a href="#amenities"><span></span>Amenities</a></li>
+          <li><a href="#location"><span></span>Location</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4 class="footer__heading">Contact</h4>
+        <p>Sukoon Road, Gayool<br/>Skardu, Gilgit-Baltistan</p>
+        <p><a href="tel:03322785666">0332-2785666</a></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Sukoon Resorts Skardu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
