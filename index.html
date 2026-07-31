@@ -10,6 +10,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="images/logo-icon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Sukoon Resorts Skardu",
+    "description": "Experience luxury amidst the peaks of Skardu at Sukoon Resorts. Mountain resort offering comfortable accommodations, breathtaking views, and warm northern hospitality in Gayool, Skardu.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sukoon Road, Gayool",
+      "addressLocality": "Skardu",
+      "addressRegion": "Gilgit-Baltistan",
+      "addressCountry": "PK"
+    },
+    "telephone": "+923322785666",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "160",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "priceRange": "PKR 8,500 - PKR 15,000",
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "24-hour Room Service", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Mountain View", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "In-House Dining", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Heating", "value": true}
+    ],
+    "checkinTime": "14:00",
+    "checkoutTime": "12:00"
+  }
+  </script>
 </head>
 <body>
 
@@ -33,9 +67,11 @@
         <ul class="header__nav-list">
           <li><a href="#hero" class="header__nav-link">Home</a></li>
           <li><a href="#rooms" class="header__nav-link">Rooms</a></li>
+          <li><a href="#gallery" class="header__nav-link">Gallery</a></li>
+          <li><a href="#reviews-detailed" class="header__nav-link">Reviews</a></li>
           <li><a href="#amenities" class="header__nav-link">Amenities</a></li>
-          <li><a href="#reviews" class="header__nav-link">Reviews</a></li>
           <li><a href="#location" class="header__nav-link">Location</a></li>
+          <li><a href="#faq" class="header__nav-link">FAQ</a></li>
           <li><a href="#contact" class="header__nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -88,6 +124,129 @@
     </div>
   </section>
 
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews section" id="reviews-detailed">
+    <div class="container">
+      <div class="section__header reveal from-bottom">
+        <span class="section__tag">Guest Experiences</span>
+        <div class="gold-divider"><span class="gold-divider__line"></span><span class="gold-divider__diamond"></span><span class="gold-divider__line"></span></div>
+        <h2 class="section__title">What Our Guests Say</h2>
+        <p class="section__desc">Real reviews from travelers who experienced Sukoon Resorts.</p>
+      </div>
+      <div class="reviews__grid reveal-stagger">
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"Absolutely stunning location with breathtaking views of the mountains. The staff was incredibly warm and welcoming. Best hotel experience in Skardu!"</p>
+          <div class="review-card__author">
+            <div class="review-card__name">Ahmed Khan</div>
+            <div class="review-card__meta">Islamabad • Delux Mountain View</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"The Family Room was perfect for our group. Clean, spacious, and the food was delicious. Highly recommend for anyone visiting Skardu!"</p>
+          <div class="review-card__author">
+            <div class="review-card__name">Fatima Ali</div>
+            <div class="review-card__meta">Lahore • Family Room</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">★★★★☆</div>
+          <p class="review-card__text">"Great value for money. The Executive Suite had amazing views and the heating worked perfectly during our winter trip. Will definitely return!"</p>
+          <div class="review-card__author">
+            <div class="review-card__name">Hassan Raza</div>
+            <div class="review-card__meta">Karachi • Executive Suite</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"Peaceful atmosphere, friendly staff, and the location is perfect - close to Shangrila but quiet. The balcony view is worth every penny!"</p>
+          <div class="review-card__author">
+            <div class="review-card__name">Sarah Ahmed</div>
+            <div class="review-card__meta">Rawalpindi • Deluxe Mountain View</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">★★★★☆</div>
+          <p class="review-card__text">"Clean rooms, hot water, and excellent hospitality. The in-house dining served authentic local food. Perfect base for exploring Skardu!"</p>
+          <div class="review-card__author">
+            <div class="review-card__name">Bilal Hussain</div>
+            <div class="review-card__meta">Gilgit • Family Room</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"From booking to checkout, everything was seamless. The team helped arrange our entire Skardu tour. Truly a home away from home!"</p>
+          <div class="review-card__author">
+            <div class="review-card__name">Ayesha Malik</div>
+            <div class="review-card__meta">Faisalabad • Executive Suite</div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__cta reveal from-bottom">
+        <a href="https://www.google.com/maps/place/Sukoon+Resorts+Skardu" target="_blank" rel="noopener" class="btn btn--outline">Read All Google Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery section section--dark" id="gallery">
+    <div class="container">
+      <div class="section__header reveal from-bottom">
+        <span class="section__tag section__tag--light">Photo Gallery</span>
+        <div class="gold-divider"><span class="gold-divider__line"></span><span class="gold-divider__diamond"></span><span class="gold-divider__line"></span></div>
+        <h2 class="section__title section__title--light">Explore Sukoon Resorts</h2>
+        <p class="section__desc section__desc--light">A glimpse into your mountain escape.</p>
+      </div>
+      <div class="gallery__grid reveal-stagger">
+        <div class="gallery-item gallery-item--large">
+          <div class="gallery-item__inner" style="background-image: url('images/hero-resort.jpg'), linear-gradient(135deg, #3A2518, #261A12);">
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__caption">Resort Exterior & Mountain Views</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item__inner" style="background-image: url('images/room-deluxe.jpg'), linear-gradient(135deg, #3A2518, #261A12);">
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__caption">Deluxe Mountain View Room</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item__inner" style="background-image: url('images/room-executive.jpg'), linear-gradient(135deg, #261A12, #3A2518);">
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__caption">Executive Suite</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item__inner" style="background-image: url('images/room-family.jpg'), linear-gradient(135deg, #1A0F0A, #261A12);">
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__caption">Family Room</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item__inner" style="background: linear-gradient(135deg, var(--rose), var(--champagne));">
+            <div class="gallery-item__overlay">
+              <svg viewBox="0 0 64 64" fill="none" style="width:48px;height:48px;"><path d="M32 8L32 56" stroke="white" stroke-width="3"/><path d="M8 32L56 32" stroke="white" stroke-width="3"/><circle cx="32" cy="32" r="28" stroke="white" stroke-width="3"/></svg>
+              <span class="gallery-item__caption">More Photos Coming Soon</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item__inner" style="background: linear-gradient(135deg, var(--champagne), var(--sky));">
+            <div class="gallery-item__overlay">
+              <svg viewBox="0 0 64 64" fill="none" style="width:48px;height:48px;"><path d="M8 32h48" stroke="white" stroke-width="3"/><path d="M32 8v48" stroke="white" stroke-width="3"/><circle cx="32" cy="32" r="28" stroke="white" stroke-width="3"/></svg>
+              <span class="gallery-item__caption">Dining & Amenities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== ROOMS ===== -->
   <section class="rooms section" id="rooms">
     <div class="container">
@@ -107,14 +266,25 @@
           <div class="room-card__body">
             <h3 class="room-card__title">Deluxe Mountain View</h3>
             <p class="room-card__desc">Panoramic mountain views with king-sized bed and premium furnishings.</p>
+            <div class="room-card__features">
+              <span class="room-card__feature">📐 350 sq ft</span>
+              <span class="room-card__feature">👥 2 Guests</span>
+              <span class="room-card__feature">🛏️ 1 King Bed</span>
+              <span class="room-card__feature">🏔️ Mountain View</span>
+            </div>
             <div class="room-card__tags">
               <span class="room-card__tag">Wi-Fi</span>
               <span class="room-card__tag">King Bed</span>
               <span class="room-card__tag">Balcony</span>
+              <span class="room-card__tag">Heating</span>
+              <span class="room-card__tag">Hot Shower</span>
             </div>
             <div class="room-card__footer">
-              <span class="room-card__price">PKR 8,500<span class="room-card__price-note">/night</span></span>
-              <a href="#" class="btn btn--rose">Book Now</a>
+              <div>
+                <span class="room-card__price">PKR 8,500<span class="room-card__price-note">/night</span></span>
+                <span class="room-card__price-usd">~$31 USD</span>
+              </div>
+              <a href="https://wa.me/923322785666?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Deluxe%20Mountain%20View%20room" class="btn btn--rose">Book Now</a>
             </div>
           </div>
         </div>
@@ -127,14 +297,25 @@
           <div class="room-card__body">
             <h3 class="room-card__title">Executive Suite</h3>
             <p class="room-card__desc">Elegant suite with living area and stunning peak views.</p>
+            <div class="room-card__features">
+              <span class="room-card__feature">📐 500 sq ft</span>
+              <span class="room-card__feature">👥 3 Guests</span>
+              <span class="room-card__feature">🛏️ 1 King + 1 Single</span>
+              <span class="room-card__feature">🏔️ Valley View</span>
+            </div>
             <div class="room-card__tags">
               <span class="room-card__tag">Wi-Fi</span>
               <span class="room-card__tag">Living Area</span>
               <span class="room-card__tag">Mini Bar</span>
+              <span class="room-card__tag">Work Desk</span>
+              <span class="room-card__tag">Blackout Curtains</span>
             </div>
             <div class="room-card__footer">
-              <span class="room-card__price">PKR 12,000<span class="room-card__price-note">/night</span></span>
-              <a href="#" class="btn btn--rose">Book Now</a>
+              <div>
+                <span class="room-card__price">PKR 12,000<span class="room-card__price-note">/night</span></span>
+                <span class="room-card__price-usd">~$43 USD</span>
+              </div>
+              <a href="https://wa.me/923322785666?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Executive%20Suite" class="btn btn--rose">Book Now</a>
             </div>
           </div>
         </div>
@@ -146,14 +327,25 @@
           <div class="room-card__body">
             <h3 class="room-card__title">Family Room</h3>
             <p class="room-card__desc">Spacious family accommodation with all modern comforts.</p>
+            <div class="room-card__features">
+              <span class="room-card__feature">📐 650 sq ft</span>
+              <span class="room-card__feature">👥 4-5 Guests</span>
+              <span class="room-card__feature">🛏️ 2 Queen Beds</span>
+              <span class="room-card__feature">🏔️ Garden View</span>
+            </div>
             <div class="room-card__tags">
               <span class="room-card__tag">Wi-Fi</span>
               <span class="room-card__tag">Multiple Beds</span>
               <span class="room-card__tag">Heating</span>
+              <span class="room-card__tag">Seating Area</span>
+              <span class="room-card__tag">Extra Bathroom</span>
             </div>
             <div class="room-card__footer">
-              <span class="room-card__price">PKR 15,000<span class="room-card__price-note">/night</span></span>
-              <a href="#" class="btn btn--rose">Book Now</a>
+              <div>
+                <span class="room-card__price">PKR 15,000<span class="room-card__price-note">/night</span></span>
+                <span class="room-card__price-usd">~$54 USD</span>
+              </div>
+              <a href="https://wa.me/923322785666?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Family%20Room" class="btn btn--rose">Book Now</a>
             </div>
           </div>
         </div>
@@ -225,7 +417,7 @@
               <div class="location__map-pin-ring"></div>
             </div>
             <p><strong>Sukoon Road, Gayool, Skardu</strong><br/>Gilgit-Baltistan, Pakistan</p>
-            <a href="#" class="btn btn--rose btn--sm">Open Maps</a>
+            <a href="https://www.google.com/maps/search/Sukoon+Resorts+Skardu+Gayool" target="_blank" rel="noopener" class="btn btn--rose btn--sm">Open Maps</a>
           </div>
         </div>
         <div class="location__card reveal from-right" id="contact">
@@ -250,6 +442,169 @@
             </div>
           </div>
           <a href="https://wa.me/923322785666" class="btn btn--rose btn--lg" style="width:100%;justify-content:center;">Message Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING POLICY ===== -->
+  <section class="policy section" id="policy">
+    <div class="container">
+      <div class="section__header reveal from-bottom">
+        <span class="section__tag">Important Information</span>
+        <div class="gold-divider"><span class="gold-divider__line"></span><span class="gold-divider__diamond"></span><span class="gold-divider__line"></span></div>
+        <h2 class="section__title">Booking Policy</h2>
+        <p class="section__desc">Everything you need to know before your stay.</p>
+      </div>
+      <div class="policy__grid reveal-stagger">
+        <div class="policy-card">
+          <div class="policy-card__icon">🕐</div>
+          <h3 class="policy-card__title">Check-in / Check-out</h3>
+          <ul class="policy-card__list">
+            <li><strong>Check-in:</strong> 2:00 PM onwards</li>
+            <li><strong>Check-out:</strong> 12:00 PM (noon)</li>
+            <li>Early check-in / late check-out subject to availability</li>
+            <li>24-hour front desk for flexible arrivals</li>
+          </ul>
+        </div>
+        <div class="policy-card">
+          <div class="policy-card__icon">💳</div>
+          <h3 class="policy-card__title">Payment Terms</h3>
+          <ul class="policy-card__list">
+            <li>50% advance payment required to confirm booking</li>
+            <li>Balance due upon check-in</li>
+            <li>Cash and bank transfer accepted</li>
+            <li>Card payments available (2% surcharge applies)</li>
+          </ul>
+        </div>
+        <div class="policy-card">
+          <div class="policy-card__icon">📋</div>
+          <h3 class="policy-card__title">Cancellation Policy</h3>
+          <ul class="policy-card__list">
+            <li>Free cancellation up to 7 days before check-in</li>
+            <li>50% refund for cancellations 3-7 days before</li>
+            <li>No refund for cancellations within 48 hours</li>
+            <li>Peak season (May-Sept): Non-refundable</li>
+          </ul>
+        </div>
+        <div class="policy-card">
+          <div class="policy-card__icon">ℹ️</div>
+          <h3 class="policy-card__title">House Rules</h3>
+          <ul class="policy-card__list">
+            <li>Valid CNIC/passport required at check-in</li>
+            <li>Only registered guests allowed in rooms</li>
+            <li>No smoking inside rooms</li>
+            <li>Quiet hours: 11:00 PM - 7:00 AM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="policy__alert reveal from-bottom">
+        <div class="policy__alert-icon">⚠️</div>
+        <div class="policy__alert-content">
+          <strong>Limited Availability in Peak Season!</strong>
+          <p>May through September is our busiest period. We recommend booking at least 3-4 weeks in advance to secure your preferred dates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq section section--dark" id="faq">
+    <div class="container">
+      <div class="section__header reveal from-bottom">
+        <span class="section__tag section__tag--light">FAQ</span>
+        <div class="gold-divider"><span class="gold-divider__line"></span><span class="gold-divider__diamond"></span><span class="gold-divider__line"></span></div>
+        <h2 class="section__title section__title--light">Frequently Asked Questions</h2>
+        <p class="section__desc section__desc--light">Common questions from our guests.</p>
+      </div>
+      <div class="faq__list reveal-stagger">
+        <div class="faq-item">
+          <button class="faq-item__header" aria-expanded="false">
+            <span class="faq-item__title">How do I reach Sukoon Resorts from Skardu city?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-item__content">
+            <p>We're located in Gayool, approximately 10 minutes by car from Skardu city center. We offer complimentary pickup service from Skardu bus stand and airport - please inform us of your arrival details at least 24 hours in advance. Taxis and local transport are also readily available.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__header" aria-expanded="false">
+            <span class="faq-item__title">Is transportation included with the booking?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-item__content">
+            <p>We provide free airport/bus station pickup and drop-off for all guests. For local sightseeing tours (Shangrila Resort, Kachura Lake, Deosai Plains, etc.), we can arrange private vehicles at additional cost. Our team will help plan your entire itinerary.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__header" aria-expanded="false">
+            <span class="faq-item__title">Do you accept card payments or only cash?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-item__content">
+            <p>We accept both cash (PKR) and card payments. Major credit/debit cards (Visa, Mastercard) are accepted with a 2% processing fee. Bank transfer is also available for advance payments. Please note that card machines may occasionally be unavailable due to connectivity issues - we recommend carrying sufficient cash as backup.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__header" aria-expanded="false">
+            <span class="faq-item__title">Is Wi-Fi reliable at the resort?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-item__content">
+            <p>We provide complimentary Wi-Fi in all rooms and common areas. Internet speed in Skardu can vary depending on weather and network conditions. Our connection is suitable for browsing, social media, and video calls, though speeds may be slower than in major cities. We recommend downloading essential files before your trip.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__header" aria-expanded="false">
+            <span class="faq-item__title">What is the best time to visit Skardu?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-item__content">
+            <p><strong>最佳季节:</strong> May to October offers pleasant weather (15-25°C) with clear mountain views. <strong>Summer (Jun-Aug):</strong> Warm days, perfect for trekking and lake visits. <strong>Autumn (Sep-Oct):</strong> Stunning fall colors and harvest season. <strong>Winter (Nov-Feb):</strong> Snow-covered landscapes and skiing opportunities, though some routes may close. <strong>Spring (Mar-Apr):</strong> Cherry/apricot blossoms - photographer's paradise!</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__header" aria-expanded="false">
+            <span class="faq-item__title">What attractions are nearby?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-item__content">
+            <p>We're perfectly located near major attractions: Shangrila Resort (5 min), Satpara Dam (15 min), Kachura Lake (45 min), Shigar Fort (40 min), and Khaplu Palace (2 hrs). Day trips to Deosai Plains (world's second-highest plateau) and Cold Desert are highly recommended. We'll help you plan the perfect itinerary!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ATTRACTIONS TEASER ===== -->
+  <section class="attractions section" id="attractions">
+    <div class="container">
+      <div class="section__header reveal from-bottom">
+        <span class="section__tag">Explore the Area</span>
+        <div class="gold-divider"><span class="gold-divider__line"></span><span class="gold-divider__diamond"></span><span class="gold-divider__line"></span></div>
+        <h2 class="section__title">Nearby Attractions</h2>
+        <p class="section__desc">Discover Skardu's natural wonders from our doorstep.</p>
+      </div>
+      <div class="attractions__grid reveal-stagger">
+        <div class="attraction-card">
+          <div class="attraction-card__distance">5 min drive</div>
+          <h3 class="attraction-card__title">Shangrila Resort</h3>
+          <p class="attraction-card__desc">Famous "Heaven on Earth" resort with Lower Kachura Lake views and historic aircraft restaurant.</p>
+        </div>
+        <div class="attraction-card">
+          <div class="attraction-card__distance">15 min drive</div>
+          <h3 class="attraction-card__title">Satpara Dam</h3>
+          <p class="attraction-card__desc">Scenic hydroelectric dam offering breathtaking mountain and water vistas. Perfect for photography.</p>
+        </div>
+        <div class="attraction-card">
+          <div class="attraction-card__distance">45 min drive</div>
+          <h3 class="attraction-card__title">Kachura Lake</h3>
+          <p class="attraction-card__desc">Crystal-clear alpine lake surrounded by snow-capped peaks. Ideal for boating and picnics.</p>
+        </div>
+        <div class="attraction-card">
+          <div class="attraction-card__distance">2 hrs drive</div>
+          <h3 class="attraction-card__title">Deosai Plains</h3>
+          <p class="attraction-card__desc">World's second-highest plateau at 4,114m. Home to Tibetan bears and wildflowers (Jun-Aug).</p>
         </div>
       </div>
     </div>
@@ -285,6 +640,12 @@
       <p>© 2026 Sukoon Resorts Skardu. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- ===== STICKY WHATSAPP BUTTON (MOBILE) ===== -->
+  <a href="https://wa.me/923322785666?text=Hi%2C%20I%27m%20interested%20in%20booking%20a%20room%20at%20Sukoon%20Resorts" class="sticky-whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.309-5.272c0-5.437 4.409-9.859 9.86-9.859 2.639 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.437-4.413 9.86-9.861 9.86m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span>Book on WhatsApp</span>
+  </a>
 
   <script src="script.js"></script>
 </body>

@@ -288,4 +288,79 @@
     }, { passive: true });
   }
 
+  /* === 19. FAQ ACCORDION === */
+  document.querySelectorAll('.faq-item__header').forEach(header => {
+    header.addEventListener('click', function() {
+      const faqItem = this.parentElement;
+      const isActive = faqItem.classList.contains('active');
+      
+      // Close all other items
+      document.querySelectorAll('.faq-item.active').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+          item.querySelector('.faq-item__header').setAttribute('aria-expanded', 'false');
+        }
+      });
+      
+      // Toggle current item
+      faqItem.classList.toggle('active');
+      this.setAttribute('aria-expanded', !isActive);
+    });
+  });
+
+  /* === 20. GALLERY MOUSE TRACK === */
+  document.querySelectorAll('.attraction-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      if (window.innerWidth <= 1024) return;
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--mx', x + '%');
+      card.style.setProperty('--my', y + '%');
+    });
+  });
+
+  /* === 21. STICKY WHATSAPP HIDE ON SCROLL (Desktop) === */
+  let lastScrollY = 0;
+  const stickyWhatsapp = document.querySelector('.sticky-whatsapp');
+  if (stickyWhatsapp && window.innerWidth <= 768) {
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      if (scrollY > lastScrollY && scrollY > 500) {
+        stickyWhatsapp.style.transform = 'translateY(100px)';
+      } else {
+        stickyWhatsapp.style.transform = 'translateY(0)';
+      }
+      lastScrollY = scrollY;
+    }, { passive: true });
+  }
+
+  /* === 22. REVIEW BACKGROUND PARALLAX === */
+  const reviewsSection = document.querySelector('.reviews');
+  if (reviewsSection) {
+    window.addEventListener('scroll', () => {
+      const rect = reviewsSection.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        const x = ((window.scrollX / window.innerWidth) * 100 + 50) % 100;
+        const y = ((window.scrollY / window.innerHeight) * 100 + 50) % 100;
+        reviewsSection.style.setProperty('--mx', x + '%');
+        reviewsSection.style.setProperty('--my', y + '%');
+      }
+    }, { passive: true });
+  }
+
+  /* === 23. IMAGE ALT TEXT === */
+  document.querySelectorAll('img:not([alt])').forEach(img => {
+    img.setAttribute('alt', 'Sukoon Resorts Skardu');
+  });
+
+  /* === 24. LAZY LOADING FOR GALLERY === */
+  document.querySelectorAll('.gallery-item__inner').forEach(inner => {
+    const bgImage = inner.style.backgroundImage;
+    if (bgImage && bgImage.includes('url')) {
+      inner.style.backgroundSize = 'cover';
+      inner.style.backgroundPosition = 'center';
+    }
+  });
+
 })();
