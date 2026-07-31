@@ -1,71 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
-  <defs>
-    <linearGradient id="roseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#C9A0C9"/>
-      <stop offset="50%" style="stop-color:#E8B47C"/>
-      <stop offset="100%" style="stop-color:#C9A0C9"/>
-    </linearGradient>
-    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#D4AF37"/>
-      <stop offset="100%" style="stop-color:#E8B47C"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  
-  <!-- Left Mountain Icon -->
-  <g transform="translate(40, 20)">
-    <path d="M0 80 L30 25 L45 50 L60 30 L75 55 L90 40 L100 80 Z" 
-          fill="url(#roseGradient)" 
-          opacity="0.3"/>
-    <path d="M15 80 L30 25 L48 52 L60 35 L75 58 L85 45 L95 80 Z" 
-          fill="url(#roseGradient)"/>
-    <circle cx="30" cy="25" r="3" fill="#E8B47C" filter="url(#glow)"/>
-  </g>
-  
-  <!-- Brand Name -->
-  <text x="155" y="55" 
-        font-family="'Playfair Display', Georgia, serif" 
-        font-size="32" 
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 900">
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Left Dot -->
+  <circle cx="150" cy="350" r="32" fill="#111"/>
+
+  <!-- Main Symbol -->
+  <path fill="#111"
+        d="
+        M170 390
+        C170 500 280 550 390 520
+        C470 500 520 440 530 380
+        C540 270 460 210 370 230
+        C320 240 280 280 275 330
+        C270 400 220 445 170 390 Z"/>
+
+  <!-- Large Crescent -->
+  <path fill="#111"
+        d="
+        M390 260
+        C430 110 650 80 860 140
+        C720 180 670 340 760 460
+        C835 565 935 535 970 470
+        C930 620 760 700 560 650
+        C430 620 340 520 390 260 Z"/>
+
+  <!-- Center Hole -->
+  <circle cx="390" cy="350" r="38" fill="white"/>
+
+  <!-- Text -->
+  <text x="500"
+        y="735"
+        text-anchor="middle"
+        font-family="Montserrat, Poppins, Arial, sans-serif"
+        font-size="110"
         font-weight="700"
-        fill="url(#roseGradient)"
-        letter-spacing="2">
+        fill="#111">
     SUKOON
   </text>
-  
-  <text x="155" y="82" 
-        font-family="'Plus Jakarta Sans', sans-serif" 
-        font-size="11" 
-        font-weight="400"
-        fill="#C9A0C9"
-        letter-spacing="4">
-    RESORTS SKARDU
+
+  <text x="500"
+        y="810"
+        text-anchor="middle"
+        font-family="Montserrat, Poppins, Arial, sans-serif"
+        font-size="42"
+        letter-spacing="20"
+        fill="#111">
+    RESORTS
   </text>
-  
-  <!-- Decorative Line -->
-  <line x1="155" y1="95" x2="365" y2="95" 
-        stroke="url(#goldGradient)" 
-        stroke-width="1.5"
-        opacity="0.7"/>
-  
-  <!-- Diamond Accent -->
-  <rect x="160" y="90" width="6" height="6" 
-        fill="url(#goldGradient)" 
-        transform="rotate(45 163 93)"
-        filter="url(#glow)"/>
-  
-  <!-- Right Mountain Icon (mirrored) -->
-  <g transform="translate(260, 20)">
-    <path d="M0 80 L30 25 L45 50 L60 30 L75 55 L90 40 L100 80 Z" 
-          fill="url(#roseGradient)" 
-          opacity="0.3"/>
-    <path d="M15 80 L30 25 L48 52 L60 35 L75 58 L85 45 L95 80 Z" 
-          fill="url(#roseGradient)"/>
-    <circle cx="30" cy="25" r="3" fill="#E8B47C" filter="url(#glow)"/>
-  </g>
+
 </svg>
